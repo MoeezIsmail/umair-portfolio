@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Graphics Portfolio — [Your Name]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating shapes -->
+<div class="floating-shape" style="top:10%;left:15%;width:50px;height:50px;background:var(--accent-red);opacity:0.15;border-radius:50%;position:fixed;pointer-events:none;animation:float1 12s linear infinite;"></div>
+<div class="floating-shape" style="top:70%;left:80%;width:40px;height:40px;background:var(--accent-mustard);opacity:0.12;border-radius:50%;position:fixed;pointer-events:none;animation:float2 15s linear infinite;"></div>
+<div class="floating-shape" style="top:50%;left:50%;width:60px;height:60px;background:var(--accent-red);opacity:0.08;border-radius:50%;position:fixed;pointer-events:none;animation:float3 18s linear infinite;"></div>
+
+<!-- Splash screen -->
+<div class="splash" id="splash">
+    <div class="logo">
+        <h1>Muhammad Umair Asad</h1>
+        <p>Professional Graphic Designer • Animation • Branding • UI/UX</p>
+        <div class="loader" aria-hidden></div>
+    </div>
+</div>
+
+<header>
+    <div class="container" style="display:flex;align-items:center;gap:18px;">
+        <div class="brand">
+            <div class="mark">G</div>
+            <div>
+                <div style="font-weight:800">Muhammad Umair Asad</div>
+                <div style="font-size:12px;color:var(--muted)">Graphic Designer & Creative Director</div>
+            </div>
+        </div>
+
+        <nav style="margin-left:auto">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- Hero / About -->
+    <section class="hero reveal" id="about">
+        <div class="hero-card">
+            <h2>Hello — I'm <span style="color:var(--accent-mustard)">Muhammad Umair Asad (URF BILL BATORI)</span></h2>
+            <p>Digital Graphic Artist, Marketing Manager, and Brand Storyteller with over 5 years of experience
+                combining creative design with strategic marketing to craft bold and engaging brand experiences.
+                From visual identities to high-performing ad campaigns, I bring ideas to life that look great and drive
+                real results. I am eager to join a dynamic team where I can fully commit my expertise to elevating
+                brand standards and contributing to the company's long-term success.</p>
+
+            <div class="socials" aria-label="social links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+                <a class="btn btn--accent" href="#projects">View Works</a>
+                <a class="btn" href="#contact" style="background:transparent;border:1px solid rgba(255,255,255,0.06)">Contact</a>
+            </div>
+        </div>
+
+        <aside style="display:flex;flex-direction:column;gap:16px">
+            <div class="hero-card reveal" style="text-align:center">
+                <img src="/assets/Photo.png" alt="sample" style="width:100%;height:300px;object-fit:cover;border-radius:12px;margin-bottom:12px">
+                <div style="font-weight:700">Signature Project</div>
+                <div style="color:var(--muted);font-size:13px">Animated branding for 'Pulse' festival.</div>
+            </div>
+
+            <div class="hero-card reveal">
+                <h4 style="margin:0">Services</h4>
+                <ul style="margin:8px 0 0;padding-left:16px;color:var(--muted)">
+                    <li> Brand & Social Media Design </li>
+                    <li> Meta & Google Ads Campaigns </li>
+                    <li> Adobe Creative Suite</li>
+                    <li> Canva </li>
+                    <li> CRM Tools </li>
+                    <li> Team Leadership </li>
+                    <li> Creative Direction </li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="reveal">
+        <h3 style="margin:0 0 12px">Services</h3>
+        <div class="services">
+            <div class="service">
+                <i class="fa-solid fa-bolt" style="font-size:22px;color:var(--accent-red)"></i>
+                <h4>Brand & Social Media Design</h4>
+                <p>Create bold, memorable brands — logos, visual systems, and brand guidelines.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-film" style="font-size:22px;color:var(--accent-mustard)"></i>
+                <h4>Meta & Google Ads Campaigns</h4>
+                <p>Boost your business with targeted Meta & Google Ads campaigns.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-image" style="font-size:22px;color:var(--accent-red)"></i>
+                <h4>Adobe Creative Suite</h4>
+                <p>Industry-standard software for graphic design, video, and web creation.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-paintbrush" style="font-size:22px;color:var(--accent-mustard)"></i>
+                <h4>Canva</h4>
+                <p>Easy online tool for designing graphics and visuals.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-users" style="font-size:22px;color:var(--accent-red)"></i>
+                <h4>CRM Tools</h4>
+                <p>Efficiently manage customer relationships and streamline business processes.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-chess-queen" style="font-size:22px;color:var(--accent-mustard)"></i>
+                <h4>Team Leadership</h4>
+                <p>Skilled in guiding teams to achieve goals efficiently.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-lightbulb" style="font-size:22px;color:var(--accent-red)"></i>
+                <h4>Creative Direction</h4>
+                <p>Shaping bold, innovative visuals that tell compelling brand stories.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects reveal">
+        <h3 style="margin:0 0 12px">Projects / Works</h3>
+        <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="logo-animation">Logo Animation</button>
+            <button class="filter" data-filter="info-graphics">Info Graphics</button>
+            <button class="filter" data-filter="face-expressions">Face Expressions</button>
+            <button class="filter" data-filter="amazon-e-Marketing">Amazon e Marketing</button>
+        </div>
+
+        <div class="grid" id="projectsGrid">
+            <!-- Example project cards (replace images & text) -->
+            <div class="card" data-cat="logo-animation">
+                <video src="/assets/logo-animation/FS.mp4" autoplay muted loop playsinline></video>
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Festival Opener</div>
+                        <div style="color:var(--muted);font-size:13px">30s animated opener</div>
+                    </div>
+                    <div class="tag">Logo Animation</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="logo-animation">
+                <video src="/assets/logo-animation/hk.1.mp4" autoplay muted loop playsinline></video>
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Festival Opener</div>
+                        <div style="color:var(--muted);font-size:13px">30s animated opener</div>
+                    </div>
+                    <div class="tag">Logo Animation</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="logo-animation">
+                <video src="/assets/logo-animation/ORNAMENT-ANIMATION.mp4" autoplay muted loop playsinline></video>
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Festival Opener</div>
+                        <div style="color:var(--muted);font-size:13px">30s animated opener</div>
+                    </div>
+                    <div class="tag">Logo Animation</div>
+                </div>
+            </div>
+
+<!--            Info Graphics-->
+
+            <div class="card" data-cat="info-graphics">
+                <img src="/assets/info-graphics/Goal%20ball-002.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Festival Banner Series</div>
+                        <div style="color:var(--muted);font-size:13px">Outdoor & web banners</div>
+                    </div>
+                    <div class="tag">Info Graphics</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="info-graphics">
+                <img src="/assets/info-graphics/IELTS-AD_001.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Festival Banner Series</div>
+                        <div style="color:var(--muted);font-size:13px">Outdoor & web banners</div>
+                    </div>
+                    <div class="tag">Info Graphics</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="info-graphics">
+                <img src="/assets/info-graphics/IELTS_AD.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Festival Banner Series</div>
+                        <div style="color:var(--muted);font-size:13px">Outdoor & web banners</div>
+                    </div>
+                    <div class="tag">Info Graphics</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="info-graphics">
+                <video src="/assets/info-graphics/WES-INFOGRPAHICS.mp4" autoplay muted loop playsinline></video>
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Festival Banner Series</div>
+                        <div style="color:var(--muted);font-size:13px">Outdoor & web banners</div>
+                    </div>
+                    <div class="tag">Info Graphics</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="info-graphics">
+                <video src="/assets/info-graphics/GOLDEN-ARTS-INTRO.mp4" autoplay muted loop playsinline></video>
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Festival Banner Series</div>
+                        <div style="color:var(--muted);font-size:13px">Outdoor & web banners</div>
+                    </div>
+                    <div class="tag">Info Graphics</div>
+                </div>
+            </div>
+
+<!--            Face Expression-->
+
+            <div class="card" data-cat="face-expressions">
+                <img src="/assets/face-expressions/All_Expressions_using_computer_WAtermarked@300x.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Monogram Logo Set</div>
+                        <div style="color:var(--muted);font-size:13px">Logo system and usage</div>
+                    </div>
+                    <div class="tag">Face Expressions</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="face-expressions">
+                <img src="/assets/face-expressions/Expression_sheet_001_Watermarked.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Monogram Logo Set</div>
+                        <div style="color:var(--muted);font-size:13px">Logo system and usage</div>
+                    </div>
+                    <div class="tag">Face Expressions</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="face-expressions">
+                <img src="/assets/face-expressions/Expression_sheet_002_Watermarked.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Monogram Logo Set</div>
+                        <div style="color:var(--muted);font-size:13px">Logo system and usage</div>
+                    </div>
+                    <div class="tag">Face Expressions</div>
+                </div>
+            </div>
+
+<!--            Amazon e marketing -->
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/shower-caps/3.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/shower-caps/4.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/shower-caps/5.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/shower-caps/6.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/razor/1.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/razor/2.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/razor/3.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/razor/4.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/razor/5.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/razor/6.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+            <div class="card" data-cat="amazon-e-Marketing">
+                <img src="/assets/amazon-marketing/razor/7.png" alt="project">
+                <div class="meta">
+                    <div>
+                        <div style="font-weight:700">Pulse Brand Identity</div>
+                        <div style="color:var(--muted);font-size:13px">Full identity & guidelines</div>
+                    </div>
+                    <div class="tag">Branding</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Resume & Skills -->
+    <section class="two-col reveal" id="resume">
+        <div class="resume">
+            <h3 style="margin-top:0">Resume</h3>
+            <p style="color:var(--muted)">Digital Graphic Artist and Marketing Manager with 5+ years’ experience combining creative design and strategic marketing to craft bold, engaging brand experiences. Skilled in visual identities and high-performing campaigns, I deliver ideas that look great and drive results.</p>
+            <ul style="color:var(--muted)">
+                <li><strong>Experience:</strong> Graphic Designer Golden Arts Printing Ltd | Manchester, UK October 2025 – Present</li>
+                <li><strong>Education:</strong> (BBA) |  University of Lancashire</li>
+                <li><strong>Tools:</strong> Adobe After Effects, Adobe Premiere Pro, Adobe Illustrator, Adobe Photoshop</li>
+            </ul>
+            <div style="margin-top:14px">
+                <a class="btn btn--accent" href="/assets/files/resume.pdf" download="resume.pdf">Download Resume</a>
+<!--                <a class="btn" href="#contact" style="margin-left:8px;background:transparent;border:1px solid rgba(255,255,255,0.06)">Hire Me</a>-->
+            </div>
+        </div>
+
+        <aside class="skills">
+            <h4 style="margin-top:0">Skills</h4>
+            <div class="skill"><div>Logo / Branding</div><div class="meter" style="width:60%"><i style="width:90%"></i></div></div>
+            <div class="skill"><div>Motion / Animation</div><div class="meter" style="width:60%"><i style="width:85%"></i></div></div>
+            <div class="skill"><div>UI / Web Graphics</div><div class="meter" style="width:60%"><i style="width:72%"></i></div></div>
+            <div class="skill"><div>Print & Packaging</div><div class="meter" style="width:60%"><i style="width:70%"></i></div></div>
+        </aside>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="reveal">
+        <div class="contact">
+            <div class="left">
+                <div style="font-weight:700">Get in touch</div>
+                <div style="color:var(--muted)">Phone: +44 7495 867412</div>
+                <div style="color:var(--muted)">Email: umairasad7562@gmail.com</div>
+            </div>
+            <div class="right">
+                <div class="chip">Based in: Lahore, Pakistan</div>
+                <div class="chip">Freelance · Available</div>
+            </div>
+        </div>
+    </footer>
+
+</main>
+
+<!-- Modal for Project Preview -->
+<div class="modal" id="modal">
+    <span class="modal-close" id="modalClose">&times;</span>
+    <img id="modalImg" src="" alt="project preview">
+</div>
+
+<div class="modal" id="modal-video">
+    <span class="modal-close" id="modalVideoClose">&times;</span>
+    <video id="modalVideo" src="" autoplay muted loop playsinline> </video>
+</div>
+
+<!-- Light/Dark Mode Toggle -->
+<div class="theme-toggle" id="themeToggle">🌗</div>
+
+<script src="script.js"></script>
+</body>
+</html>
