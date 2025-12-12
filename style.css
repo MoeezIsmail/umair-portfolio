@@ -429,7 +429,7 @@ footer {
 /* ------------------------------
    MOBILE RESPONSIVENESS
    ------------------------------*/
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
     /* Global fixes */
     body {
@@ -439,7 +439,7 @@ footer {
 
     header .container {
         flex-direction: column;
-        gap: 8px !important;
+        gap: 50px !important;
         text-align: center;
     }
 
@@ -462,10 +462,10 @@ footer {
 
     .hero-card img,
     .hero-card video {
-        width: 100%;
+        width: 80%;
         height: auto !important;
-        max-height: 260px;
-        object-fit: cover;
+        /*height: 840px;*/
+        object-fit: fill;
     }
 
     .socials {
