@@ -528,6 +528,46 @@ footer {
 }
 
 @media (max-width: 640px) {
+    body {
+        font-size: 18px; /* Global font-size boost */
+        line-height: 1.55;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p, a, li, span {
+        font-size: 17px;
+    }
+
+    .btn {
+        font-size: 17px;
+        padding: 12px 16px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+
+    .tag {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
     nav ul {
         display: none
     }
