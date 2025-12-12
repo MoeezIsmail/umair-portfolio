@@ -426,6 +426,107 @@ footer {
     }
 }
 
+/* ------------------------------
+   MOBILE RESPONSIVENESS
+   ------------------------------*/
+@media (max-width: 768px) {
+
+    /* Global fixes */
+    body {
+        padding: 0 14px;
+        overflow-x: hidden;
+    }
+
+    header .container {
+        flex-direction: column;
+        gap: 8px !important;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-card {
+        width: 100% !important;
+    }
+
+    .hero-card img,
+    .hero-card video {
+        width: 100%;
+        height: auto !important;
+        max-height: 260px;
+        object-fit: cover;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    /* Services */
+    .services {
+        grid-template-columns: 1fr !important;
+        gap: 18px;
+    }
+
+    /* Projects */
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .grid .card video,
+    .grid .card img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 12px;
+    }
+
+    /* Splash Screen */
+    .splash .logo h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .splash p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /* Contact / Footer (if any) */
+    #contact {
+        text-align: center;
+    }
+
+    /* Fix sidebar + hero layout */
+    .hero aside {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* Reduce spacing */
+    section {
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 640px) {
     nav ul {
         display: none
