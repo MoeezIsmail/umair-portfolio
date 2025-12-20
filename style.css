@@ -59,7 +59,7 @@ body {
     margin-top: 18px;
     height: 6px;
     width: 240px;
-    border-radius: 999px;
+    border-radius: 1024px;
     background: linear-gradient(90deg, var(--accent-red), var(--accent-mustard));
     animation: load 2s linear infinite
 }
