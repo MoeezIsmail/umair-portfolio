@@ -51,8 +51,8 @@ modalV.addEventListener('click', e => {
 // Splash hide after load
 window.addEventListener('load', () => {
     const s = document.getElementById('splash');
-    setTimeout(() => s.classList.add('hide'), 900);
-    setTimeout(() => s.style.display = 'none', 1400);
+    setTimeout(() => s.classList.add('hide'), 400);
+    setTimeout(() => s.style.display = 'none', 900);
 });
 
 // IntersectionObserver for reveal animations & skill meters
